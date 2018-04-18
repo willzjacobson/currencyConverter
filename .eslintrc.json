@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb", // EXISTING
+  "extends": "airbnb",
   "parser": "babel-eslint",
   "env": {
     "browser": true
@@ -24,6 +24,12 @@
       0
     ],
     "global-require": [
+      0
+    ],
+    "no-console": [
+      0
+    ],
+    "arrow-parens": [
       0
     ]
   }
