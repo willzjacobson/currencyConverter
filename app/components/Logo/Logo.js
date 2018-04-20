@@ -16,12 +16,10 @@ class Logo extends Component {
 
   componentDidMount() {
     // This is necessary because the 'will' events are not available on Android
-    const showListener = Platform.OS === 'ios'
-      ? 'keyboardWillShow'
-      : 'keyboardDisShow';
-    const hideListener = Platform.OS === 'ios'
-      ? 'keyboardWillHide'
-      : 'keyboardDisHide';
+    const showListener =
+      Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDisShow';
+    const hideListener =
+      Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDisHide';
 
     this.keyboardShowListener = Keyboard.addListener(
       showListener,

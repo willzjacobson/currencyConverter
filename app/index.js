@@ -1,10 +1,13 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-import CurrencyList from './screens/CurrencyList';
+import Navigator from './config/routes';
 
 EStyleSheet.build({
   $primaryBlue: '#4f6d7a',
+  $primaryOrange: '#d57a66',
+  $primaryGreen: '#00bd9d',
+  $primaryPurple: '#9e768f',
 
   $border: '#E2E2E2',
   $darkText: '#343434',
@@ -13,4 +16,4 @@ EStyleSheet.build({
   $white: '#ffffff',
 });
 
-export default () => <CurrencyList />;
+export default () => <Navigator />;
